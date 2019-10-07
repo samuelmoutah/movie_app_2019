@@ -40,7 +40,7 @@ export default class extends React.Component {
         const request  = await tvApi.showDetail(parsedId);
         result = request.data
       }
-      console.log(result)
+      //console.log(result)
     } catch {
       this.setState({ error: "Can't find anything." });
     } finally {
