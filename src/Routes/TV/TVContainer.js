@@ -20,7 +20,7 @@ export default class extends Component {
             const { 
                 data: { results: popular }
             } = await tvApi.popular()
-            
+            //throw Error()
             const {
                 data: { results: airingToday }
             } = await tvApi.airingToday()
@@ -33,7 +33,7 @@ export default class extends Component {
 
         } catch {
             this.setState({
-                error: "Can't find TV infomation."
+                error: "Can't find TV information."
             })
 
         } finally {

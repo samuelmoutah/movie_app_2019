@@ -24,7 +24,7 @@ export default class extends Component {
             const {
                 data: { results: popular }
             } = await moviesApi.popular()
-
+            //throw Error()
             this.setState({
                 nowPlaying: nowPlaying,
                 upcoming: upcoming,
